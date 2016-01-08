@@ -1,0 +1,20 @@
+{
+  "name": "Healthline",
+  "version": "1.0.0",
+  "authors": [
+    "Jesus Rocha Guerrero <jrocha@healthline.com>"
+  ],
+  "description": "Hapi (node) + Jade + JavaScript",
+  "main": "server/index.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0"
+  }
+}
