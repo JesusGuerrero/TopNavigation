@@ -76,15 +76,16 @@ module.exports = function (grunt) {
         copy: {
             fonts: {
                 cwd: 'bower_components',
-                src: [ 'fontawesome/fonts/*.{otf,eot,svg,ttf,woff,woff2}', 'bootstrap/fonts/*.{otf,eot,svg,ttf,woff,woff2}'],
+                src: [ 'font-awesome/fonts/*.{otf,eot,svg,ttf,woff,woff2}', 'bootstrap/fonts/*.{otf,eot,svg,ttf,woff,woff2}'],
                 dest: 'server/public/fonts',
                 expand: true,
                 flatten: true
             },
             img: {
                 cwd: 'client',
-                src: 'WebComponents/**/*.{jpg,png,gif}',
-                dest: 'server/img',
+                src: ['WebComponents/**/*.{jpg,png,gif}'],
+                expand: true,
+                dest: 'server/public/img',
                 flatten: true
             }
         },
