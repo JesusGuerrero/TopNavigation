@@ -56,12 +56,23 @@
                 </div>
               </div>
             </li>
-            <li><a href="">Subscribe</a></li>
-            <li class="social-media"><a href=""><i class="fa fa-facebook-f"></i></a><a href=""><i class="fa fa-twitter"></i></a><a href=""><i class="fa fa-pinterest-p"></i></a></li>
-            <li><a href=""><i class="fa fa-search"></i></a></li>
+            <li><a href="" id="digioh_newsletter_signup_trigger">Subscribe</a></li>
+            <li class="social-media"><a href="https://www.facebook.com/healthlinenetworks/" target="_blank"><i class="fa fa-facebook-f"></i></a><a href="https://twitter.com/healthline" target="_blank"><i class="fa fa-twitter"></i></a><a href="https://www.pinterest.com/healthline/" target="_blank"><i class="fa fa-pinterest-p"></i></a></li>
+            <li><a id="search-link" data-toggle="modal" data-target=".search-modal"><i class="fa fa-search"></i></a></li>
           </ul>
         </nav>
         <div class="clear"></div>
+      </div>
+      <div tabindex="-1" role="dialog" class="modal fade search-modal">
+        <div class="modal-dialog modal-md">
+          <div class="row">
+            <div class="col-md-12"><a data-dismiss="modal" aria-label="Close" class="close"><i class="fa fa-close fa-2x"></i></a>
+              <div class="form-group has-feedback">
+                <input type="text" class="form-control input-lg"><span class="fa fa-search form-control-feedback"></span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <script src="/assets/js/application.js"></script>

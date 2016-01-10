@@ -8807,6 +8807,9 @@ button.hl-bootstrap .close {
     display: none !important;
   }
 }
+.hl-bootstrap .modal-backdrop {
+  background: #FFF;
+}
 header#hl_global_header {
   height: 50px;
   background: #FAF8F7;
@@ -8876,6 +8879,7 @@ header#hl_global_header .container nav ul#topic_center > li a {
   color: #999999;
   font-size: 16px;
   display: block;
+  cursor: pointer;
 }
 header#hl_global_header .container nav ul#topic_center > li a .fa-chevron-up {
   display: none;
@@ -8950,6 +8954,12 @@ header#hl_global_header .container nav ul#topic_center > li.topics .dropdown .co
 }
 header#hl_global_header .container nav ul#topic_center > li.topics .dropdown .container-fluid .row .col-md-3 ul li:last-child {
   border-bottom: none;
+}
+header#hl_global_header .search-modal a {
+  position: absolute;
+  right: -30px;
+  top: 2px;
+  opacity: 1;
 }
 @media screen and (max-width: 997px) {
   header#hl_global_header {
