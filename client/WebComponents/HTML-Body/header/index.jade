@@ -1,11 +1,14 @@
-header#hl_global_header.hl-font-awesome.hl-bootstrap
+include ../modal/subscribe
+include ../modal/search
+
+header#hl_global_header
     .container
         .logo
             a(href="/")
                 img( src="/assets/img/hl-logo.png")
-        nav
-            ul#topic_center
-                li.collapse
+        nav.pull-right
+            ul#nav-items
+                li.collapse.sub-topics
                     a(href="javascript:void(0)")
                         |Skin Disorders
                         i.fa.fa-chevron-down
@@ -64,9 +67,8 @@ header#hl_global_header.hl-font-awesome.hl-bootstrap
                                 i.fa.fa-stethoscope
                                 | &nbsp;Health Tools
 
-                li
-                    a( href="" id="digioh_newsletter_signup_trigger")
-                        | Subscribe
+                li.newsletter
+                    a(href="#" data-toggle="modal" data-target="#subscribe") Subscribe
                 li.social-media
                     a( href="https://www.facebook.com/healthlinenetworks/" target="_blank")
                         i.fa.fa-facebook-f
@@ -74,18 +76,9 @@ header#hl_global_header.hl-font-awesome.hl-bootstrap
                         i.fa.fa-twitter
                     a(href="https://www.pinterest.com/healthline/" target="_blank")
                         i.fa.fa-pinterest-p
-                li
-                    a( id="search-link" data-toggle="modal" data-target=".search-modal")
+                li.search
+                    a(href="#" data-toggle="modal" data-target="#search")
                         i.fa.fa-search
         .clear
-    .modal.fade.search-modal( tabindex="-1" role="dialog")
-        .modal-dialog.modal-md
-            .row
-                .col-md-12
-                    a(class="close" data-dismiss="modal" aria-label="Close")
-                        i.fa.fa-close.fa-2x
-                    .form-group.has-feedback
-                        input.form-control.input-lg(type="text")
-                        span.fa.fa-search.form-control-feedback
 
 

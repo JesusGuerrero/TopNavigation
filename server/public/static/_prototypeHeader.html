@@ -1,15 +1,58 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="/assets/css/application.css" rel="stylesheet">
+    <script src="/assets/js/application.js"></script>
   </head>
-  <body>
-    <header id="hl_global_header" class="hl-font-awesome hl-bootstrap">
+  <body class="hl-font-awesome hl-bootstrap">
+    <div tabindex="-1" role="dialog" id="subscribe" class="modal fade">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-body"><i data-dismiss="modal" aria-label="Close" class="fa fa-close pull-right fa-2x"></i>
+            <h4 class="modal-title">Subscribe to Newsletter</h4>Newsletter Content
+          </div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+            <button type="button" class="btn btn-primary">Join</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div tabindex="-1" role="dialog" id="search" class="modal fade">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="form-group has-feedback">
+                  <input type="text" placeholder="Search our site..." class="form-control"><span class="glyphicon glyphicon-search form-control-feedback"></span>
+                </div>
+              </div>
+              <div class="col-sm-12 text-center">
+                <h4>Trending Searches</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#">car</a></li>
+                  <li><a href="#">house</a></li>
+                  <li><a href="#">work</a></li>
+                  <li><a href="#">family</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header id="hl_global_header">
       <div class="container">
         <div class="logo"><a href="/"><img src="/assets/img/hl-logo.png"></a></div>
-        <nav>
-          <ul id="topic_center">
-            <li class="collapse"><a href="javascript:void(0)">Skin Disorders<i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i></a>
+        <nav class="pull-right">
+          <ul id="nav-items">
+            <li class="collapse sub-topics"><a href="javascript:void(0)">Skin Disorders<i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i></a>
               <div class="dropdown">
                 <div class="container-fluid">
                   <ul>
@@ -56,25 +99,13 @@
                 </div>
               </div>
             </li>
-            <li><a href="" id="digioh_newsletter_signup_trigger">Subscribe</a></li>
+            <li class="newsletter"><a href="#" data-toggle="modal" data-target="#subscribe">Subscribe</a></li>
             <li class="social-media"><a href="https://www.facebook.com/healthlinenetworks/" target="_blank"><i class="fa fa-facebook-f"></i></a><a href="https://twitter.com/healthline" target="_blank"><i class="fa fa-twitter"></i></a><a href="https://www.pinterest.com/healthline/" target="_blank"><i class="fa fa-pinterest-p"></i></a></li>
-            <li><a id="search-link" data-toggle="modal" data-target=".search-modal"><i class="fa fa-search"></i></a></li>
+            <li class="search"><a href="#" data-toggle="modal" data-target="#search"><i class="fa fa-search"></i></a></li>
           </ul>
         </nav>
         <div class="clear"></div>
       </div>
-      <div tabindex="-1" role="dialog" class="modal fade search-modal">
-        <div class="modal-dialog modal-md">
-          <div class="row">
-            <div class="col-md-12"><a data-dismiss="modal" aria-label="Close" class="close"><i class="fa fa-close fa-2x"></i></a>
-              <div class="form-group has-feedback">
-                <input type="text" class="form-control input-lg"><span class="fa fa-search form-control-feedback"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </header>
-    <script src="/assets/js/application.js"></script>
   </body>
 </html>

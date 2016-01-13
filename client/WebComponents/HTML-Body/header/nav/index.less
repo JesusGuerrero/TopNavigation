@@ -1,0 +1,22 @@
+nav .container #navbar ul {
+  li.dropdown-block {
+    position: inherit;
+    div.dropdown-menu {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      ul li a {
+        display: block;
+        padding: 5px 20px;
+        clear: both;
+        white-space: nowrap;
+        color: @dropdown-link-color;
+        &:hover {
+          text-decoration: none;
+          color: @dropdown-link-hover-color;
+          background: @dropdown-link-hover-bg;
+        }
+      }
+    }
+  }
+}

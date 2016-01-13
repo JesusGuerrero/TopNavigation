@@ -1,0 +1,20 @@
+.modal.fade(tabindex="-1" role="dialog" id="search")
+    .modal-dialog.modal-md
+        .modal-content
+            .modal-body
+                .row
+                    .col-sm-12
+                        .form-group.has-feedback
+                            input.form-control(type="text" placeholder="Search our site...")
+                            span.glyphicon.glyphicon-search.form-control-feedback
+                    .col-sm-12.text-center
+                        h4 Trending Searches
+                        ul.list-unstyled
+                            each search in ['car','house','work','family']
+                                li
+                                    a(href="#")
+                                        =search
+
+                .clearfix
+            .modal-footer
+                button.btn.btn-default(type="button" data-dismiss="modal") Close
